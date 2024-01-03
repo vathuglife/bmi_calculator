@@ -1,0 +1,16 @@
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\bin\Debug\BMICalculator.exe.config
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\bin\Debug\BMICalculator.exe
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\bin\Debug\BMICalculator.pdb
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\obj\Debug\BMICalculator.csproj.AssemblyReference.cache
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\obj\Debug\BMICalculator.csproj.SuggestedBindingRedirects.cache
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\obj\Debug\MainWindow.g.cs
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\obj\Debug\App.g.cs
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\obj\Debug\BMICalculator_MarkupCompile.cache
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\obj\Debug\BMICalculator_MarkupCompile.lref
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\obj\Debug\MainWindow.baml
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\obj\Debug\BMICalculator.g.resources
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\obj\Debug\BMICalculator.Properties.Resources.resources
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\obj\Debug\BMICalculator.csproj.GenerateResource.cache
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\obj\Debug\BMICalculator.csproj.CoreCompileInputs.cache
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\obj\Debug\BMICalculator.exe
+E:\FPT STUFFS\CHUYEN_NGANH\Semester 7\PRN221\BMICalculator\obj\Debug\BMICalculator.pdb
