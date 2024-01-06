@@ -60,6 +60,7 @@
     <Compile Include="Models\BMIResult.cs" />
     <Compile Include="Services\BMIServices.cs" />
     <Compile Include="Services\Implementation\BMIServicesImplementation.cs" />
+    <Compile Include="Utils\MessageBoxUtils.cs" />
     <Compile Include="Utils\ValidationUtils.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

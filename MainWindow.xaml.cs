@@ -36,16 +36,18 @@ namespace BMICalculator
         {
             try
             {
-                List<double> userWeightHeight = getUserWeightHeight();
-                double bmi = bmiServices.calculateBMI(userWeightHeight);
+                List<string> rawWeightHeight = getWeightHeight();
+                validateWeightHeight(rawWeightHeight);
+                List<double> weightHeight = castWeightHeightToDouble(rawWeightHeight);                
+                double bmi = bmiServices.calculateBMI(weightHeight);
                 BMIStatus bmiStatus = bmiServices.calculateBMIStatus(bmi);
                 BMIResult bmiResult = new BMIResult(bmi, bmiStatus);
                 setBMIResult(bmiResult);
             }
             catch (InvalidNumberFormatException)
             {
-                MessageBox.Show("Invalid number format. Please try again.", "Warning",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
+
+                showInvalidNumberFormatMessage();
             }
         }
 
@@ -59,22 +61,42 @@ namespace BMICalculator
 
         }
 
-        private List<double> getUserWeightHeight()
+        private List<string> getWeightHeight()
         {
-            string heightRawValue = HeightTextbox.Text.ToString();
-            string weightRawValue = WeightTextbox.Text.ToString();
-
+            string height = HeightTextbox.Text.ToString();
+            string weight = WeightTextbox.Text.ToString();
+            
+            return new List<string> { height, weight };
+        }
+        private void validateWeightHeight(List<string> rawWeightHeight)
+        {
+            string heightRawValue = rawWeightHeight[0];
+            string weightRawValue = rawWeightHeight[1];
+            
             if (!ValidationUtils.isNumeric(heightRawValue) ||
                 !ValidationUtils.isNumeric(weightRawValue))
             {
                 throw new InvalidNumberFormatException();
 
+            }           
+        }
+        private void showInvalidNumberFormatMessage()
+        {
+            DefaultMessageBoxArguments defaultMessageBoxArguments = 
+                new DefaultMessageBoxArguments("Invalid number format. Please try again.", "Warning",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBoxUtils.showDefaultMessageBox(defaultMessageBoxArguments);
+        }
+        private List<double> castWeightHeightToDouble(List<string> rawWeightHeight)
+        {
+            List<double> result = new List<double>();
+            foreach(string value in rawWeightHeight)
+            {
+                double castValue = double.Parse(value);                
+                result.Add(castValue);
             }
+            return result;
 
-            double height = double.Parse(heightRawValue);
-            double weight = double.Parse(weightRawValue);
-
-            return new List<double> { height, weight };
         }
 
         private void setBMIResult(BMIResult bmiResult)
